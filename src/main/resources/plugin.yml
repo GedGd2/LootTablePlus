@@ -1,0 +1,10 @@
+name: LootTablePlus
+author: Gdalia
+version: '${version}'
+main: dev.gdalia.candor.LootTablePlus
+api-version: 1.18
+description: A plugin for candor developer application.
+commands:
+  loottables:
+    permission: loot-table-plus.configure
+    description: A gui with all the active loot tables.

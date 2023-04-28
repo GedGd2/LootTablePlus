@@ -1,0 +1,40 @@
+prefix: '&6&lLootTablePlus &7» '
+disable-sounds: false
+
+# explanation on how things work on this loot table!
+mobs:
+  zombie:
+    # example-name is the name of the item drop section.
+    example-name:
+      # material:{material} & material-amount{amount} = generally creates an item with amount set as {amount}.
+      material: wooden_sword
+      material-amount: 1
+
+      # lore:
+      #   - {text} = generates lore to the item, '|' creates new line.
+      #              lore supports color codes as well! (& + color char).
+      lore:
+        - "&5I Love Food"
+
+      # display-name:{text} = generates a display name to the item when held in inventory.
+      #                       display-name supports color codes as well! (& + color char).
+      display-name: "&6Rotten Sword"
+
+      # enchantment:
+      #  - type:{enchantment} = VVV
+      #  - level:{level} = generates enchantments and applies it to the item!
+      #                    note that if the item does not support the enchantment and,
+      #                    there will be an error printed in the console relating to this item,
+      #                    and the item will not be added to the generated loot table.
+      enchantments:
+        sharpness:
+          level: 1
+        looting:
+          level: 3
+
+      # drop-chance:{1-100} = generates the random probability of the item to be dropped in
+      #                       the loot table when the mob related to the loot table dies!
+      #                       note that exceeding or conceding the allowed loot number
+      #                       will be considered as the highest or the lowest number
+      #                       in the percentage table (e.g: 101 = 100, 0 = 1;).
+      drop-chance: 12
