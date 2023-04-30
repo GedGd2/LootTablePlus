@@ -23,9 +23,8 @@ mobs:
       # enchantment:
       #  - type:{enchantment} = VVV
       #  - level:{level} = generates enchantments and applies it to the item!
-      #                    note that if the item does not support the enchantment and,
-      #                    there will be an error printed in the console relating to this item,
-      #                    and the item will not be added to the generated loot table.
+      #                    note that if the item does not support the enchantment,
+      #                    there will be an error printed in the console relating to this item.
       enchantments:
         sharpness:
           level: 1

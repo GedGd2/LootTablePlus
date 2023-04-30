@@ -35,7 +35,7 @@ public class LootTablesManager {
      * Getting every specified loot table of targeted mob type to a list.
      *
      * @param entityType the targeted mob type
-     * @return specified mob list of loot boxes
+     * @return specified list of loot boxes
      */
     public List<LootItem> getLootTable(EntityType entityType) {
         return lootItems.stream().filter(lootItem -> lootItem.getEntityType().equals(entityType)).toList();
