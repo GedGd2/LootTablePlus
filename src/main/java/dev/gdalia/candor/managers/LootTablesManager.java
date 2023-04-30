@@ -21,14 +21,15 @@ import java.util.Map;
 public class LootTablesManager {
 
     private static LootTablesManager instance;
-    private final List<LootItem> lootItems = new ArrayList<>();
-
-    public LootTablesManager() {
-        instance = this;
-    }
 
     public static LootTablesManager getInstance() {
-        return instance == null ? new LootTablesManager() : instance;
+        return instance == null ? instance = new LootTablesManager() : instance;
+    }
+
+    private final List<LootItem> lootItems = new ArrayList<>();
+
+    private LootTablesManager() {
+
     }
 
     /**
