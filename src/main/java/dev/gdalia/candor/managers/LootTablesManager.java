@@ -76,8 +76,8 @@ public class LootTablesManager {
                 LootItem table = new LootItem(s, entityType, Material.valueOf(material.toUpperCase()), section.getInt(s + "." + ConfigFields.LootTableFields.MATERIAL_AMOUNT), lore, displayName, enchantments, section.getInt(s + "." + ConfigFields.LootTableFields.DROP_CHANCE));
                 lootItems.add(table);
             });
-            Bukkit.getConsoleSender().sendMessage(Component.text(ChatColor.translateAlternateColorCodes('&', ConfigManager.getPrefix() + "&asuccessfully loaded all loot boxes!")));
         });
+        Bukkit.getConsoleSender().sendMessage(Component.text(ChatColor.translateAlternateColorCodes('&', ConfigManager.getPrefix() + "&asuccessfully loaded all loot boxes!")));
     }
 
     /**
